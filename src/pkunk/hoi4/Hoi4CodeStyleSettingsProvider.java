@@ -18,7 +18,7 @@ public class Hoi4CodeStyleSettingsProvider extends LanguageCodeStyleSettingsProv
     @Nullable
     @Override
     public CommonCodeStyleSettings getDefaultCommonSettings() {
-        CodeStyleSettings codeStyleSettings = new CodeStyleSettings();
+        CodeStyleSettings codeStyleSettings = new CodeStyleSettings(false);
         CommonCodeStyleSettings.IndentOptions indentOptions = codeStyleSettings.getIndentOptions();
         assert indentOptions != null;
         indentOptions.USE_TAB_CHARACTER = true;
